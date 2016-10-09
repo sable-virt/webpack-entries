@@ -7,27 +7,27 @@ describe('install', function () {
     afterEach(() => {
     });
     it('to array', () => {
-        let e = entries('./test/sample/*.js');
+        let e = entries('./test/example/*.js');
         assert.deepEqual(e,[
-            './test/sample/a.js',
-            './test/sample/b.js',
-            './test/sample/c.js'
+            './test/example/a.js',
+            './test/example/b.js',
+            './test/example/c.js'
         ]);
     });
     it('to object', () => {
-        let e = entries('./test/sample/*.js',true);
+        let e = entries('./test/example/*.js',true);
         assert.deepEqual(e,{
-            a: './test/sample/a.js',
-            b: './test/sample/b.js',
-            c: './test/sample/c.js'
+            a: './test/example/a.js',
+            b: './test/example/b.js',
+            c: './test/example/c.js'
         });
     });
     it('to object2', () => {
         let e = entries('./test/**/*.js',true);
         assert.deepEqual(e,{
-            'sample/a': './test/sample/a.js',
-            'sample/b': './test/sample/b.js',
-            'sample/c': './test/sample/c.js',
+            'example/a': './test/example/a.js',
+            'example/b': './test/example/b.js',
+            'example/c': './test/example/c.js',
             'index': './test/index.js'
         });
     });
