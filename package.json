@@ -1,0 +1,34 @@
+{
+  "name": "webpack-entries",
+  "version": "1.0.0",
+  "description": "webpack glob entries",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require intelli-espower-loader -R spec ./test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://frontainer@github.com/frontainer/webpack-entries.git"
+  },
+  "keywords": [
+    "webpack",
+    "glob",
+    "entry"
+  ],
+  "author": "frontainer",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/frontainer/webpack-entries/issues"
+  },
+  "homepage": "https://github.com/frontainer/webpack-entries#readme",
+  "dependencies": {
+    "glob": "^7.1.1",
+    "glob-base": "^0.3.0"
+  },
+  "devDependencies": {
+    "espower-loader": "^1.0.1",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^3.1.0",
+    "power-assert": "^1.4.1"
+  }
+}
