@@ -1,10 +1,20 @@
 'use strict';
 const assert = require('power-assert');
 const entries = require('../index');
+const fs = require('fs');
 describe('install', function () {
     beforeEach(() => {
+        // create dir test/sample
+        fs.mkdirSync('./test/sample');
+        fs.writeFileSync('./test/sample/a.js','');
+        fs.writeFileSync('./test/sample/b.js','');
+        fs.writeFileSync('./test/sample/c.js','');
     });
     afterEach(() => {
+        fs.unlinkSync('./test/sample/a.js');
+        fs.unlinkSync('./test/sample/b.js');
+        fs.unlinkSync('./test/sample/c.js');
+        fs.rmdirSync('./test/sample');
     });
     it('to array', () => {
         let e = entries('./test/sample/*.js');
