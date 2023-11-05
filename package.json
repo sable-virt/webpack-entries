@@ -22,13 +22,13 @@
   },
   "homepage": "https://github.com/frontainer/webpack-entries#readme",
   "dependencies": {
-    "glob": "^7.1.1",
-    "glob-base": "^0.3.0"
+    "glob": "^7.1.1"
   },
   "devDependencies": {
     "espower-loader": "^1.0.1",
+    "glob-base": "github:justin-caribou/glob-base#d4fe4313e55988a902a3940127cb946a7defbb50",
     "intelli-espower-loader": "^1.0.1",
-    "mocha": "^3.1.0",
+    "mocha": "^10.2.0",
     "power-assert": "^1.4.1"
   }
 }
